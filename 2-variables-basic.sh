@@ -1,5 +1,5 @@
 #!/bin/bash
-x=ramesh
+x=sachin
 y=suresh
 
 echo "$x : Hi $y"
