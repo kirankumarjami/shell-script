@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#adding of 3 numbers.
+#adding of 3 numbers and commiting values at commmand line.
 
 number1=$1
 number2=$2
