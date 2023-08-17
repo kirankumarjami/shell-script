@@ -2,6 +2,9 @@
 x=sachin
 y=suresh
 
-echo "$x : Hi $y"
-echo "$y : Hi $x,How are you?"
-echo "$x : i'm fine $y"
+#shell script will run the command inside $() and stores the value in variable called DATE.
+DATE=$(date)
+
+echo "$x : Hi $y $DATE"
+echo "$y : Hi $x,How are you? $DATE"
+echo "$x : i'm fine $y $DATE"
