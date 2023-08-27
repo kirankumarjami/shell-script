@@ -20,11 +20,12 @@ fi
 
 for i in $@
 do 
-    yum list installed | grep $i >$LOG_FILE
+    yum list installed | grep $i &>>$LOG_FILE
     if [ %? -ne 0]
     then
         echo "package should be install"
-        yum install $i -y >$LOG_FILE
+        yum install $i -y &>>$LOG_FILE
     else
         echo -e "$Y package is already installed $N"
     fi
+done
