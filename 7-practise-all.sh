@@ -27,4 +27,4 @@ do
         yum install $i -y >$LOG_FILE
     else
         echo -e "$Y package is already installed $N"
-    fi 
+    fi
