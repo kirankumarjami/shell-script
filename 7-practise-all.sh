@@ -21,7 +21,7 @@ fi
 for i in $@
 do 
     yum list installed | grep $i &>>$LOG_FILE
-    if [ %? -ne 0]
+    if [ $? -ne 0]
     then
         echo "$i package should be install"
         yum install $i -y &>>$LOG_FILE
